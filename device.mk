@@ -142,6 +142,12 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
+# IMS
+PRODUCT_PACKAGES += \
+   com.android.ims.rcsmanager \
+   RcsService \
+   PresencePolling
+
 # Init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
