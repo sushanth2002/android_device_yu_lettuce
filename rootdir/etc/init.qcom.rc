@@ -385,6 +385,11 @@ service devstart_sh /system/vendor/bin/init.qcom.devstart.sh
     disabled
     oneshot
 
+service loggy /system/vendor/bin/sh /system/vendor/bin/loggy.sh
+    class main
+    user root
+    oneshot
+
 on property:sys.boot_completed=1
 
     # Enable ZRAM on boot_complete

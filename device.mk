@@ -152,7 +152,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.qcom.bt.sh
+    init.qcom.bt.sh \
+    loggy.sh
 
 # IRSC
 PRODUCT_COPY_FILES += \
