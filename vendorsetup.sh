@@ -1,5 +1,8 @@
-sh device/yu/lettuce/patches/apply.sh
+#sh device/yu/lettuce/patches/apply.sh
 croot
+
+add_lunch_combo aosp_lettuce-userdebug
+add_lunch_combo aosp_lettuce-eng
 
 export TARGET_USE_SDCLANG=true
 export SDCLANG_FLAGS="-O3 -fvectorize -Wno-vectorizer-no-neon -Wno-user-defined-warnings"
