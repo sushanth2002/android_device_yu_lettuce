@@ -61,6 +61,13 @@ on init
     # Enable IMS
     setprop service.qti.ims.enabled 1
 
+on boot
+# HAX for IMS
+service ims-hax /system/vendor/bin/init.qcom.ims-hax.sh
+    class late_start
+    user root
+    oneshot
+
 service ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
    class main
    user system

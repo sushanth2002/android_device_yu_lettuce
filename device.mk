@@ -148,6 +148,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.qcom.devstart.sh \
     init.qcom.devwait.sh \
+    init.qcom.ims-hax.sh \
     init.qcom.rc \
     init.qcom.mem.sh \
     init.qcom.power.rc \
