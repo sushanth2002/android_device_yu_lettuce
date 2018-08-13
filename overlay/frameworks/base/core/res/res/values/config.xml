@@ -197,10 +197,6 @@
          correctly use them when installed on your device.  Otherwise, keep this disabled
          so that applications can still use their own mechanisms. -->
     <bool name="config_enableAutoPowerModes">true</bool>
-
-    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
-         in hardware. -->
-    <bool name="config_setColorTransformAccelerated">true</bool>
  
     <!-- Device configuration adjusting the minfree tunable in the
          lowmemorykiller in the kernel.  A high value will cause the lowmemorykiller to
