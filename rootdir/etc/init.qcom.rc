@@ -51,11 +51,6 @@ on post-fs
     # Start devices by sysfs trigger
     start devstart_sh
 
-service loggy /system/vendor/bin/sh /system/vendor/bin/loggy.sh
-    class main
-    user root
-    oneshot
-
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/fdAlbum 0770 camera camera
