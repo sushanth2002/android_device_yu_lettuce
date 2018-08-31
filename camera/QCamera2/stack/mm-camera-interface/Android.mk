@@ -23,7 +23,7 @@ LOCAL_COPY_HEADERS_TO := \
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/inc \
     $(LOCAL_PATH)/../common \
-    hardware/qcom/media/mm-core/inc \
+    hardware/qcom/media-caf-msm8916/mm-core/inc \
     system/media/camera/include
 
 LOCAL_C_INCLUDES += \
