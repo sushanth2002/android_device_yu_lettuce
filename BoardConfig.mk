@@ -72,8 +72,11 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 # Camera
 BOARD_CAMERA_SENSORS := ov5670_q5v41b ov8865_q8v18a
 USE_DEVICE_SPECIFIC_CAMERA := true
-
 TARGET_DESTROYED_MUTEX_USAGE_WHITELIST := mm-qcamera-daemon
+
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+	/system/bin/mediaserver=23 \
+	/system/vendor/bin/mm-qcamera-daemon=23
 
 # Dex optimizion
 ifeq ($(HOST_OS),linux)
