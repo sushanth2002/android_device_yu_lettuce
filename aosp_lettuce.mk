@@ -27,7 +27,9 @@ PRODUCT_DEVICE := lettuce
 
 ALLOW_MISSING_DEPENDENCIES := true
 
+# Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
+PRODUCT_COPY_FILES += device/yu/lettuce/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
