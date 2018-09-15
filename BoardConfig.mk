@@ -197,6 +197,7 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc.0/78b9000.i2c/i2c-5/5-0040/double_t
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Radio
+DISABLE_RILD_OEM_HOOK := false
 MALLOC_SVELTE := true
 TARGET_RIL_VARIANT := caf
 
