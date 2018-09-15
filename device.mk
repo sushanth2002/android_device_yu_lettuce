@@ -15,8 +15,6 @@
 # limitations under the License.
 #
 
--include $(LOCAL_PATH)/qcom_utils.mk
-
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 #PRODUCT_ENFORCE_RRO_TARGETS := framework-res
@@ -90,6 +88,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8916 \
     hwcomposer.msm8916 \
     libgenlock \
+    librsjni \
     libtinyxml \
     memtrack.msm8916
 
@@ -169,10 +168,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/qpnp_pon.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/qpnp_pon.kl
 
 # Keymaster
-ifneq ($(TARGET_PROVIDES_KEYMASTER),true)
 PRODUCT_PACKAGES += \
     keystore.msm8916
-endif
 
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
@@ -205,25 +202,13 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
-# Misc
+# Misc props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    keyguard.no_require_sim=true
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.selinux=1
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.storage_manager.enabled=true
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    media.recorder.show_manufacturer_and_model=true
-
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
-    librsjni
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    net.tethering.noprovisioning=true
+    keyguard.no_require_sim=true \
+    media.recorder.show_manufacturer_and_model=true \
+    net.tethering.noprovisioning=true \
+    ro.build.selinux=1 \
+    ro.storage_manager.enabled=true \
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -259,6 +244,7 @@ PRODUCT_PACKAGES += \
 # Radio
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
+    libprotobuf-cpp-full \
     librmnetctl \
     libxml2
 

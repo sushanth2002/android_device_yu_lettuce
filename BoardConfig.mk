@@ -70,9 +70,8 @@ TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 # Camera
-BOARD_CAMERA_SENSORS := ov5670_q5v41b ov8865_q8v18a
 USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_DESTROYED_MUTEX_USAGE_WHITELIST := mm-qcamera-daemon
+TARGET_DESTROYED_MUTEX_USAGE_WHITELIST := /system/vendor/bin/mm-qcamera-daemon
 TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 	/system/bin/mediaserver=23 \
@@ -138,9 +137,6 @@ TARGET_USES_MKE2FS := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
-
-# Framework sched boost
-ENABLE_SCHED_BOOST := true
 
 # GPS
 TARGET_NO_RPC := true
@@ -210,9 +206,9 @@ TARGET_DISABLE_OTA_ASSERT := true
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
-#include device/qcom/sepolicy/legacy-sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+# include device/qcom/sepolicy/sepolicy.mk
+# include device/qcom/sepolicy/legacy-sepolicy.mk
+# BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
@@ -228,10 +224,6 @@ endif
 
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
-
-# Widevine
-BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 3
-
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
