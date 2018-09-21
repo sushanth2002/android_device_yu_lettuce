@@ -71,8 +71,6 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_DESTROYED_MUTEX_USAGE_WHITELIST := /system/vendor/bin/mm-qcamera-daemon
-TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
 	/system/bin/mediaserver=23 \
 	/system/vendor/bin/mm-qcamera-daemon=23
