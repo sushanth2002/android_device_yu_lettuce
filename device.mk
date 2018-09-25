@@ -236,8 +236,7 @@ PRODUCT_COPY_FILES += \
 # Pixel apps
 PRODUCT_PACKAGES += \
     MatchmakerPrebuilt \
-    NexusLauncherPrebuilt \
-    WallpaperPickerGooglePrebuilt
+    WallpaperPickerGooglePrebuilt #NexusLauncherPrebuilt
 
 # Power
 PRODUCT_PACKAGES += \
