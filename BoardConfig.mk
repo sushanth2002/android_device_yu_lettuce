@@ -114,9 +114,6 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
 
-# Exclude serif fonts for saving system.img size.
-EXCLUDE_SERIF_FONTS := true
-
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
