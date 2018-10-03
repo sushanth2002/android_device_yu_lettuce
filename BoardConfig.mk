@@ -107,9 +107,9 @@ TARGET_USES_NEW_ION_API := true
 USE_OPENGL_RENDERER := true
 
 # Encryption
-TARGET_HW_DISK_ENCRYPTION := true
-TARGET_LEGACY_HW_DISK_ENCRYPTION := true
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
+#TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_LEGACY_HW_DISK_ENCRYPTION := true
+#TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Extended Filesystem Support
