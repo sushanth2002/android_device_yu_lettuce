@@ -136,6 +136,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.enable_boot_charger_mode=1
 
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
