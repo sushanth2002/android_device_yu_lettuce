@@ -129,6 +129,7 @@ BOARD_HAVE_QCOM_FM := true
 # GPS
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
+USING_DEVICE_GPS := true
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -157,9 +158,6 @@ TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# LineageHW
-JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
-
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
@@ -168,7 +166,6 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
-PRODUCT_ENFORCE_RRO_TARGETS := framework-res
 
 # Power
 TARGET_HAS_NO_POWER_STATS := true
@@ -183,7 +180,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Radio
 DISABLE_RILD_OEM_HOOK := false
 MALLOC_SVELTE := true
-TARGET_RIL_VARIANT := caf
+PROTOBUF_SUPPORTED := true
 TARGET_USE_OLD_MNC_FORMAT := true
 
 # Recovery

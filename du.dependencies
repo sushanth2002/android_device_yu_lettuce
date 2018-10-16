@@ -1,0 +1,17 @@
+[
+ {
+   "repository":  "lettuce-pie/android_vendor_yu",
+   "target_path": "vendor/yu",
+   "branch":      "du-p9x-caf"
+ },
+ {
+   "repository":  "lettuce-pie/android_kernel_cyanogen_msm8916",
+   "target_path": "kernel/cyanogen/msm8916",
+   "branch":      "lineage-16.0"
+ }
+ {
+   "repository":  "krasCGQ/aarch64-linux-android",
+   "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-opt-linux-android",
+   "branch":      "opt-linaro-7.x"
+ }
+]
