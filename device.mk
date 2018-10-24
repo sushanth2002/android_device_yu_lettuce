@@ -262,7 +262,7 @@ PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
 # Telephony
-PRODUCT_PACKAGES += telephony-ext ims-ext-common
+PRODUCT_PACKAGES += telephony-ext
 PRODUCT_BOOT_JARS += telephony-ext
 
 # USB HAL
